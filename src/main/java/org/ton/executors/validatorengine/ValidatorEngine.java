@@ -293,6 +293,7 @@ public class ValidatorEngine {
         String genZeroStateFifNew = "";
 
         genZeroStateFifNew = StringUtils.replace(genZeroStateFif, "GLOBAL_ID", settings.getBlockchainSettings().getGlobalId().toString());
+        genZeroStateFifNew = StringUtils.replace(genZeroStateFifNew, "1 capCreateStats", "6 capCreateStats");
         genZeroStateFifNew = StringUtils.replace(genZeroStateFifNew, "INITIAL_BALANCE", settings.getBlockchainSettings().getInitialBalance().toString());
         genZeroStateFifNew = StringUtils.replace(genZeroStateFifNew, "GAS_PRICE_MC", settings.getBlockchainSettings().getGasPriceMc().toString());
         genZeroStateFifNew = StringUtils.replace(genZeroStateFifNew, "GAS_PRICE", settings.getBlockchainSettings().getGasPrice().toString());
